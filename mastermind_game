@@ -104,5 +104,5 @@ if ready_or_not == "Y"
 		tries += 1
 	end
 	puts "Computer Wins! number of tries: #{tries}"
-else puts "Wake me when you've got a code in mind"
+else puts "Wake me when you've got a code in mind."
 end
