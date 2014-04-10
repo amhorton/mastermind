@@ -77,7 +77,7 @@ tries = 0
 failures = 0
 total_games = 0
 until total_games == 1000 do 
-    secret_code = set_clone.shuffle.first #generates a new secret code for the computer to guess
+    secret_code = set.shuffle.first #generates a new secret code for the computer to guess
     while user_response != [4, 0] do
 	user_response = compare(last_guess, secret_code) #mimics the user response using "compare"
 	set.reject! {|n| n.eliminated?(last_guess, user_response) == true}
